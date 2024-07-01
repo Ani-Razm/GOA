@@ -1,11 +1,8 @@
 from turtle import*
 
-def draw_rectangle(width,lenght,color):
-    for _ in range(2):
-        forward(lenght)
-        right(90)
-        forward(width)
-        right(90)
-    color(color)
+speed(100)
+width(5)
+color("brown")
+forward(100)
 
-draw_rectangle(10,20,"red")
+exitonclick()

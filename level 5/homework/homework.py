@@ -9,7 +9,7 @@ from turtle import*
 speed(100)
 width(5)
 color("brown")
-bgcolor("skyblue")\
+bgcolor("skyblue")
 
 
 # grass
