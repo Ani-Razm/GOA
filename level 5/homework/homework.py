@@ -1,6 +1,10 @@
+# Level 4:
+# finall boss, EXTREME LEVEL
+# turtle-ში დახაზეთ სასახლე, მეფე და დედოფალი, დაარჭვეთ GOA-ს დროშა კოშკზე.
+
+
 from turtle import*
 
-# we want to paint a castle with king and queen
 
 speed(100)
 width(5)
@@ -86,6 +90,7 @@ forward(170)
 left(240)
 end_fill()
 
+
 # Middle mountain
 penup()
 goto(-280, -200)
@@ -118,6 +123,7 @@ forward(170)
 right(240)
 end_fill()
 
+
 # sun
 penup()
 goto(-800,400)
@@ -127,7 +133,6 @@ begin_fill()
 circle(80)
 end_fill()
   
-
 
 # castle
 
@@ -159,9 +164,6 @@ end_fill()
 right(180)
 
 
-
-
-
 # second tower
 penup()
 goto(-250,-250)
@@ -188,6 +190,7 @@ for i in range(3):
 end_fill()
 right(180)
 
+
 # third tower
 penup()
 goto(50,-250)
@@ -213,6 +216,7 @@ for i in range(3):
     forward(150)
 end_fill()
 right(180)
+
 
 # building
 penup()
@@ -255,7 +259,6 @@ forward(620)
 end_fill()
 
 
-
 # fourth tower
 penup()
 goto(225,-250)
@@ -281,6 +284,7 @@ for i in range(3):
     forward(150)
 end_fill()
 right(180)
+
 
 # queen and king
 
@@ -336,9 +340,6 @@ end_fill()
 right(95)
 
 
-
-
-
 # queen
 
 # hair
@@ -385,7 +386,6 @@ forward(2)
 left(90)
 end_fill()
 
-
 # body
 penup()
 goto(-45,-70)
@@ -425,7 +425,6 @@ right(130)
 forward(10)
 end_fill()
 right(95)
-
 
 
 # Entrance building
@@ -674,21 +673,3 @@ hideturtle()
 
 
 exitonclick()
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
