@@ -1,12 +1,12 @@
-# ranks = ["ace", "king", "queen", "queen"]
+# მომხმარებელს შემოატანინეთ ჯერ სახელი, ხოლო შემდეგ გვარი.
 
-# ages = [13,41,23,567,86,42]
+name = input("enter your name: ")
+last_name = input("enter your last name: ")
 
-# message = "you habe ajdhaa kbkasd"
 
+# ორივე მონაცემი შეინახეთ ცვლადებში და ბოლოს დაბეჭდეთ ერთი დიდი წინადადება, რომელშიც გექნებათ სახელიც და გვარიც.
 
-print("robot".find("t"))
-
+print("nice to meet you",name,last_name)
 
 
 
