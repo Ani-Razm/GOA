@@ -1,1 +1,2 @@
-print(5%2)
+number = input("please enter number: ")
+print(type(number))
