@@ -4,6 +4,7 @@ number = 10
 guess = 0
 
 while guess != number:
+
     guess = int(input("guees number from 1 to 100: "))
 
     if guess > number:

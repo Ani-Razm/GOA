@@ -1,3 +1,4 @@
+# Counting to 12
 number = 0
 
 while number < 13:
