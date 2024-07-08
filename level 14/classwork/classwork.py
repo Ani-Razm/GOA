@@ -13,7 +13,7 @@ while num < 10:
 
 print(total)
 
-#3
+#3 Guess Game
 num = 0
 while num !=5:
     num = int(input("enter number: "))
