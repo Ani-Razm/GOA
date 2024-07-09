@@ -1,26 +1,21 @@
-# შექმენით პროგრამა სადაც მომხმარებელი შემოიტანს 5 რიცხვს
-# ხოლო ამ 5 რიცხვს შორის გამოიყენეთ ყველა არითმეტიკული ოპერაცია (// და %_იც)        
-# საბოლოოდ დაბეჭდეთ შედეგები ტერმინალში 
-# + ახსენით თითოეული ნაწილი კოდის რატომ დაწერეთ კონკრეტული ხაზი და რას აკეთებს.
+# გამოიყენეთ ყველა კონვერტაციის ფუნქცია და გააკეთეთ თითოეულზე 5-5 მაგალითი
+
+print(int(1.2))
+print(int(5))
+print(int("2"))
+print(int("24"))
+print(int(-1.9))
+
+print(float(5))
+print(float(-10))
+print(float("10"))
+print(float("2.4"))
+print(float(1.2))
+
+print(str(2))
+print(str(-10.2))
+print(str("123"))
+print(str(12))
+print(str(12.12))
 
 
-
-# ითხოვს მომხმარებლისგან input-ს და გარდაქმნის ჩაწერილ ინფორმაციას ინტეჯერად,
-# რათა შემდგომ მოცემულ მნიშვნელობეზე შევძლოთ არითმეტიკური ოპერაციების შესრულება.
-
-num1 = int(input("enter number 1: ")) 
-num2 = int(input("enter number 2: "))
-num3 = int(input("enter number 3: "))
-num4 = int(input("enter number 4: "))
-num5 = int(input("enter number 5: "))
-
-
-# მომხმარებლის მიერ შემოტანილ რიცხვებს შორის ასრულებს ყველა არითმეტიკულ ოპერაციას
-
-print(num1 + num2)
-print(num1 - num3)
-print(num1 / num4)
-print(num4 // num5)
-print(num3 % num4)
-print(num5 ** num1)
-print(num2 * num4)

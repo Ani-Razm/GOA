@@ -1,12 +1,31 @@
-# socks shop program
-socks = 100
-wallet = int(input("enter how much money you have: "))
-counter = 0 
+# for loop 1
+list = ["banana", "milk" , "water" , "apple"]
 
-while socks > 0 and wallet > 0:
-    wallet -= 1
-    socks -= 1
-    counter += 1
-print("you can buy",counter,"socks")
-print("remaining socks in shop",socks)
-print("remaining money:",wallet)
+for i in list:
+    print(i)
+
+# for loop 2
+for i in range(100,200,5):
+    print(i)
+
+# for loop 3
+for i in range(10):   
+    if i == 5:
+        continue
+    else:
+        print(i)
+
+# for loop 4
+
+for i in list:
+    print(i)
+    if i == list[2]:
+        break
+
+
+# for loop 5
+
+for i in range(10):
+    print(i)
+
+

@@ -1,28 +1,46 @@
-#ჩამოწერეთ 10-10 მაგალითი and და or ოპერატორებზე
+# გაკვეთილზე განხილული შედარების ოპერატორებიდან (>, <, ==, >=, <=, !=) თითოეულზე ჩამოწერეთ 5-5 მაგალითი
 
-# and
-print(True and (-1 >- 12))
-print((22 > 2) and (-1 > 2))
-print((5 < 10) and (-1 == -1))
-print((10 != 3) and (312 != 12))
-print((15 >= 12) and False)
-print((12 <= 232) and (11 < 12))
-print((12 != 102) and (0 > -12))
-print((8 > 2) and (100 >= 2))
-print((0.3 <= 2) and (34 == 34))
-print((0 >= 2) and (12 > -123))
-print((132 > 2) and True)
+# >
+print(10 > 1)
+print(2 > 12)
+print(2 > 1)
+print(-1 > 1)
+print(2 > 0)
 
-# or
-print(False or (90 > - 1))
-print((2 == 2) or True)
-print((5 < 10) or (-1 == -1))
-print((10 != 3) or (12 != 32))
-print((5 >= 4) or True)
-print((14 <= 22) or (1 < 2))
-print((2 != 10) or (12 > 12))
-print((6 < 2) or (10 >= 3))
-print((0 <= 2) or (34.34 == 39))
-print((0.05 > 2) or (12 <= 13))
-print((90 != 5) or True)
+# <
+print(2 < 10)
+print(1 < 1)
+print(2 < 23)
+print(-13 < 1)
+print(2 < 12)
+
+# ==
+print(2 == 2)
+print(5 == 2)
+print(-10 == 10)
+print(12 == 12)
+print(1 == 2)
+
+# >=
+print(2 >= 2)
+print(3 >= 1)
+print(10 >= 2)
+print(2 >= 19)
+print(1 >= 18)
+
+# <=
+print(1 <= 2)
+print(2 <= 20)
+print(2 <= -20)
+print(3 <= 10)
+print(15 <= 1)
+
+# !=
+print(2 <= 2)
+print(2 <= 15)
+print(12 <= 12)
+print(-2 <= -2)
+print(12 <= 100)
+
+
 

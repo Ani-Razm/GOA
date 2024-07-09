@@ -1,31 +1,51 @@
-# for loop 1
-list = ["banana", "milk" , "water" , "apple"]
+# გააკეთეთ 5 მაგალითი if-else
 
-for i in list:
-    print(i)
+# if/else 1
+age = int(input("enter your age: "))
 
-# for loop 2
-for i in range(100,200,5):
-    print(i)
+if age >= 18:
+    print("you can vote")
+else:
+    print("you can't vote yet")
 
-# for loop 3
-for i in range(10):   
-    if i == 5:
-        continue
+
+# if/else 2
+num1 = int(input("enter number 1: "))
+num2 = int(input("enter number 2: "))
+
+print(num1) if num1 > num2 else print(num2)
+
+
+# if/else 3
+age = int(input("enter your age: "))
+
+if age > 10:
+    print("your age is above 10")
+    if age > 30:
+        print("and also it above 30")
     else:
-        print(i)
-
-# for loop 4
-
-for i in list:
-    print(i)
-    if i == list[2]:
-        break
+        print("but not above 30")
+else:
+    print("your age is below 10")
 
 
-# for loop 5
+# if/else 4
+a = int(input("enter number 1: "))
+b = int(input("enter number 2: "))
 
-for i in range(10):
-    print(i)
+if a > b:
+    pass
+elif b > a:
+    print(b,"is greater than",a)
+else:
+    pass
+
+
+# if/else 5
+a = int(input("enter number 1: "))
+b = int(input("enter number 2: "))
+
+if not a > b:
+    print(a,"is less than",b)
 
 
