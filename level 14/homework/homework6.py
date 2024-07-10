@@ -47,5 +47,3 @@ b = int(input("enter number 2: "))
 
 if not a > b:
     print(a,"is less than",b)
-
-

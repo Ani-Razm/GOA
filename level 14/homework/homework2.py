@@ -1,3 +1,5 @@
+# გაიარეთ for ციკლი და გააკეთეთ 5 მაგალითი for ციკლებზე
+
 # for loop 1
 list = ["banana", "milk" , "water" , "apple"]
 
@@ -16,7 +18,6 @@ for i in range(10):
         print(i)
 
 # for loop 4
-
 for i in list:
     print(i)
     if i == list[2]:
@@ -24,7 +25,6 @@ for i in list:
 
 
 # for loop 5
-
 for i in range(10):
     print(i)
 
