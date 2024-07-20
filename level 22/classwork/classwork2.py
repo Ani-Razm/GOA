@@ -79,20 +79,3 @@ def upper_case(list):
 
 print(upper_case(["pottato","banana","apple"]))
       
-    
-
-
-
-
-
-
-   
-
-
-
-
-
-
-    
-
- 

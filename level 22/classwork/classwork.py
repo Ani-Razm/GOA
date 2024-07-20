@@ -53,10 +53,3 @@ def sequence_of_numbers(n):
         print(i)
 
 sequence_of_numbers(4)
-
-        
-
-            
-
-
-
