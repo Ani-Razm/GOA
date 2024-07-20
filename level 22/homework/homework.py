@@ -1,18 +1,18 @@
-# შექმენით ფუნქცია, რომელიც იღებს რაიმე რიცხვს და აბრუნებს მასზე 5'ით მეტს.
+#1. შექმენით ფუნქცია, რომელიც იღებს რაიმე რიცხვს და აბრუნებს მასზე 5'ით მეტს.
 def plus_five(number):
     return number + 5
 
 print(plus_five(5))
 
 
-# შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და აბრუნებს მათ ნამრავლს
-def Multiplie(int1,int2):
+#2. შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და აბრუნებს მათ ნამრავლს
+def Multiplied(int1,int2):
     return int1 * int2
 
-print(Multiplie(2,3))
+print(Multiplied(2,3))
 
 
-# შექმენით ფუნქცია, რომელიც იღებს string'ს ამ string'ის სიგრძეს (გამოიყენეთ ფუნქცია len())
+#3. შექმენით ფუნქცია, რომელიც იღებს string'ს ამ string'ის სიგრძეს (გამოიყენეთ ფუნქცია len())
 
 def len_str(string):
     return len(string)
@@ -20,7 +20,7 @@ def len_str(string):
 print(len_str("jasdj"))
 
 
-# შექმენით ფუნქცია, რომელიც იღებს string'ების list'ს და აბრუნებს ამ string'ების სიგრძეების list'ს (გამოიყენეთ ფუნქცია len()).
+#4. შექმენით ფუნქცია, რომელიც იღებს string'ების list'ს და აბრუნებს ამ string'ების სიგრძეების list'ს (გამოიყენეთ ფუნქცია len()).
 def string_len_list(list):
     len_list = []
     for i in list:
@@ -30,7 +30,7 @@ def string_len_list(list):
 print(string_len_list(["adad","ajvgda"]))
 
         
-# შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს True-ს თუ ის არის Palindrome
+#5. შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს True-ს თუ ის არის Palindrome
 # (ანუ იგივენაირად იკითხება მარცნიდანაც და მარჯვნიდანაც მაგალითად: "wow") და სხვა შემთხვევაში False-ს.
 def palindrome(string):
     reversed = ""
@@ -42,7 +42,7 @@ def palindrome(string):
 print(palindrome("ani"))
 print(palindrome("wow"))
 
-# შექმენით ფუნქცია, რომელიც პოულობს ყველაზე გრძელ string'ს string'ების სიაში.
+#6. შექმენით ფუნქცია, რომელიც პოულობს ყველაზე გრძელ string'ს string'ების სიაში.
 def longest_str(list):
     longest = ""
     for item in list:
@@ -53,7 +53,7 @@ def longest_str(list):
 print(longest_str(["asjd","ajsda"]))
 
 
-# შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს
+#7. შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს
 def factorial(number):
     f = 1
     for i in range(2,number+1):
@@ -62,34 +62,34 @@ def factorial(number):
 
 print(factorial(3))
 
-# შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მაქსიმალური რიცხვების ჯამს.
+#8. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მაქსიმალური რიცხვების ჯამს.
 def max_numbers_sum(list1,list2):
     list_sum = max(list1) + max(list2)
     return list_sum
 
 print(max_numbers_sum([2,3],[4,5]))
 
-# შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მინიმალური რიცხვების სხვაობას.
+#9. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მინიმალური რიცხვების სხვაობას.
 def min_numbers_sum(list1,list2):
     list_sum = min(list1) + min(list2)
     return list_sum
 
 print(min_numbers_sum([2,3],[4,5]))
 
-# შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.
+#10. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.
 def max_min_sum(list):
     subtraction = max(list) - min(list)
     return subtraction
 
 print(max_min_sum([2,3]))
 
-# შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ყველა ელემენტის ჯამს.
+#11. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ყველა ელემენტის ჯამს.
 def list_num_sum(list):
     return sum(list)
 
 print(list_num_sum([2,4,3]))
 
-# შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.
+#12. შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.
 def count_vowels(string):
     vowels = ["a","e","i","o","u","A","E","I","O","U"]
     counter = 0
@@ -102,7 +102,7 @@ def count_vowels(string):
 
 print(count_vowels("GOA"))
 
-# შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ახალ list'ს თითოეული integer'ის კვადრატით. 
+#13. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ახალ list'ს თითოეული integer'ის კვადრატით. 
 # (მაგალითად: input: [2, 4]. output: [4, 16])
 def nums_square(list):
     list2 = []
@@ -113,7 +113,7 @@ def nums_square(list):
 
 print(nums_square([2,3,4]))
 
-# შექმენით ფუნქცია, რომელიც იღებს string's და აბრუნებს მის შებრუნებულს.
+#14. შექმენით ფუნქცია, რომელიც იღებს string's და აბრუნებს მის შებრუნებულს.
 def reverse(s):
     reversed_word = ""
     for letter in s:
