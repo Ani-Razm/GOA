@@ -26,16 +26,20 @@ print(word.lower())
 "ani".index("ni")
 
 # find და index მეთოდები გამოიყენება იმისთვის, რომ ვიპოვოთ კონკრეტული ელემენტის ინდექსი სტრინგში,
-# მათ შორის განსხვავება ისაა რომ find მეთოდი ერორს არ გვაძლევს ელემენტის არ პოვნის შემთვევაში(უბრალოდ -1-ს გვიბრუნებს), 
+# მათ შორის განსხვავება ისაა რომ find მეთოდი ერორს არ გვაძლევს ელემენტის არ პოვნის შემთხვევაში(უბრალოდ -1-ს გვიბრუნებს), 
 # index კი გვაძლევს
 
 email_list = []
   
 emails_num = int(input("enter how much emails you want to enter: "))
+
 for i in range(emails_num):
     email = input("enter email " + str(i + 1) + ":")
+
     if email.endswith("@gmail.com"):
         email_list.append(email)
+    else:
+        print("email is invalid")
 
 print(email_list)
 
