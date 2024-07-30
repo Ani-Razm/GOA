@@ -265,7 +265,6 @@ lst = [[1, 2], [3, 4]]
 
 outer_index = 0
 
-
 while outer_index < len(lst):
     inner_index = 0
     while inner_index < len(lst[outer_index]):

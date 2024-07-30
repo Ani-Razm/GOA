@@ -1,0 +1,23 @@
+.first{
+    color:aqua;
+    background-color: black;
+}
+
+.second{
+    color:brown;
+    background-color: bisque;
+}
+
+#unique{
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.third p{
+    color:rgb(13, 255, 0);
+}
+
+.third p,b{
+    color:blueviolet;
+}
+
