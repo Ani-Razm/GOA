@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1{
+    padding: 0;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.wrapper{
+    background-color: rgb(248, 215, 106);
+    padding-left: 80px;
+    justify-content: center;
+    display: flex; /* ვხდით ნავიგაციის მენიუს შვილ ელემენტებს მოქნილს */
+    flex-direction: row;  /* ვალაგებთ ნავიგაციის მენიუს შვილ ელემენტებს ერთ სვეტში */
+    align-items: center; /* ასწორებს ელემენტებს ცენტრში ვერტიკალურად*/
+    align-items: flex-start;  
+}
+
+ul{
+    display: flex;
+    flex-direction: row; /*ალაგებს დაულაგებელი სიის ელემენტებს ერთ სვეტში*/
+    flex-wrap: wrap; /*აძლევს ელემენტებს იმის საშუალებას რომ გადავიდნენ ახალ ხაზზე როდესც მიმდინარე ხაზზე ადგილი აღარ ყოფნით*/
+}
+
+ul li{
+    font-size: 25px;
+    padding: 50px 100px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: white;
+}
+
+ul img{
+    width: 20px;
+}
+
+/* მთავარი */
+main{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+rad
+h2{
+    font-size: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px rgb(230, 229, 229);
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+#submit:hover{
+    background-color: rgb(255, 233, 159);
+}
+
+#submit{
+    color: rgb(44, 44, 44);
+    font-weight: 600;
+    background-color:  rgb(248, 215, 106);
+    border: none;
+}
+
+form a:hover{
+    color: rgb(235, 194, 62);
+}
+
+.form{
+    font-size: 14px;
+}
+
