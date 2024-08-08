@@ -20,3 +20,8 @@ def stray(arr):
     for i in arr:
         if arr.count(i) == 1:
             return i
+
+#5
+def sort_by_length(arr):
+    arr.sort(key = len) # ალაგებს სიტყვებს, მათი სიგრძის ზრდადობის მიხედვით
+    return arr
