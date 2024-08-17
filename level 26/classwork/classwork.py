@@ -42,10 +42,3 @@ for i in range(emails_num):
         print("email is invalid")
 
 print(email_list)
-
-
-
-
-
-
-

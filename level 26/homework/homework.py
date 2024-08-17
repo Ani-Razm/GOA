@@ -227,11 +227,17 @@ while i < len(lst):
 
 # 39. Print the elements of the dictionary {"a": 1, "b": 2} using a for loop.
 dct = {"a": 1, "b": 2}
-for x in dct.items():
-    print(x)
+for x, y in dct.items():
+    print(x, y)
 
 
 # 40. Print the elements of the dictionary {"a": 1, "b": 2} using a while loop.
+dct = {"a": 1, "b": 2}
+
+i = 0
+while i < len(dct):
+    print(dct.items())
+
 # 41. Print the numbers 10, 20, 30 using a for loop.
 for i in range(10,40,10):
     print(i)

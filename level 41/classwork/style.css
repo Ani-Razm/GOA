@@ -1,0 +1,58 @@
+*{
+   font-family: "Grey Qo";
+   justify-content: center;
+   color: #ffffff;
+}
+
+body{
+    background: url(pexels-veeterzy-114979.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+header{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #6440ac3c;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 20px 80px;
+    margin: 0px 20px;
+    transition: ease .40s;
+}
+
+li:hover{
+    background-color: #ffffff6d;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+p{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
