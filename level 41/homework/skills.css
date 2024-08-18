@@ -28,7 +28,7 @@ h1{
     padding-right: 250px;
 }
 
-.cards div:nth-child(1){
+.cards div:nth-child(2){
     width: 200px;
     background-color: #429bff;
     margin: 0px 100px;
@@ -37,9 +37,9 @@ h1{
     transition: ease .4s;
 }
 
-.cards div:nth-child(2){
+.cards div:nth-child(1){
     width: 200px;
-    background-color:  #429bff;
+    background-color:  #fc844d;
     margin: 0px 100px;
     border-radius: 20px;
     padding: 20px;
@@ -48,7 +48,7 @@ h1{
 
 .cards div:nth-child(3){
     width: 200px;
-    background-color:  #429bff;
+    background-color:  #e4c931;
     margin: 0px 100px;
     border-radius: 20px;
     padding: 20px;
@@ -57,7 +57,12 @@ h1{
 
 .cards div:hover{
     transform: scale(1.1);
-    background-color: #429aff94;
+    background-color: #6ba6ff94;
+    box-shadow: 10px 10px 10px #429bff;
+}
+
+div:nth-last-child(){
+    background-color: #fc844d;
 }
 
 h2{
