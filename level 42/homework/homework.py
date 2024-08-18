@@ -15,4 +15,4 @@ def dup(arry):
     for i in range(len(arry) - 1):
         if arry[i] != arry[i + 1]:
             new += arry[i]    
-    return (new + arry[-1]).split()  
+    return (new + arry[-1]).split()
