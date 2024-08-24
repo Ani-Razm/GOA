@@ -1,0 +1,81 @@
+:root{
+    --img-width: 400px;
+    --cards_width: 400px;
+}
+
+*{
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.instrumental{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.electro-guitar{
+    width: var(--cards_width);
+    height: var(--cards_width);
+    background-image: url("/level 45/homework/photos/electro.jpg");
+    background-position: center;
+    background-size: var(--img-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acoustic{
+    width: var(--cards_width);
+    height: var(--cards_width);
+    background-image: url("/level 45/homework/photos/acoustic.jpg");
+    background-position: center;
+    background-size: var(--img-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.viollin{
+    width: var(--cards_width);
+    height: var(--cards_width);
+    background-image: url("/level 45/homework/photos/viollin.jpg");
+    background-position: center;
+    background-size: var(--img-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.855);
+    padding: 10px 40px;
+    transition: ease .4s;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+h3{
+    text-shadow: 5px 5px 10px black;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 40px;
+    background-color: #d2b084;
+    color: #fff;
+}

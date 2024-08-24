@@ -49,9 +49,3 @@ def bounces(h,bounce,window):
         return count
     return -1
             
-
-
-
-
-
-
