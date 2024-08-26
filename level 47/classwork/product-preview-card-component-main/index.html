@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-family: "Montserrat";
+      font-weight: 500;
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3eae3;
+      height: 100vh;
+    }
+
+    #card{
+      width: 600px;
+      display:flex;
+      border-radius: 10px;
+      background-color: #fff;
+      height: 450px;
+    }
+
+    #content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 30px;
+    }
+
+    #perfum{
+      width: 300px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    #prices p:nth-child(1){
+      color: #388469;
+      font-size: 32px;
+      margin-right: 20px ;
+      font-family: "Fraunces";
+      font-weight: 700;
+    }
+
+    #prices p:nth-child(2){
+      color: #727272;
+      text-decoration: line-through;
+    }
+
+    #prices{
+      display: flex;
+      align-items: center;
+    }
+
+   h1{
+    color: #727272;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+   }
+
+   h2{
+    font-size: 32px;
+    line-height: 32px;
+    font-family: "Fraunces";
+    font-weight: 700;
+   }
+
+   p:nth-child(3){
+    color: #727272;
+    line-height: 23px;
+   }
+
+   button{
+    background-color: #388469;
+    border: none;
+    color: #fff;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   button:hover{
+    background-color: #29604d;
+   }
+  </style>
+</head>
+<body>
+  <div id = "card">
+    <img src="/level 47/classwork/product-preview-card-component-main/images/image-product-desktop.jpg" alt="chanel perfum" id="perfum">
+
+    <div id = "content">
+      <h1>Perfume</h1>
+
+      <h2>Gabrielle Essence Eau <br> De Parfum</h2>
+
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+
+      <div id="prices">
+        <p>$149.99</p>
+        <p>$169.99</p>
+      </div>
+
+      <button><img src="/level 47/classwork/product-preview-card-component-main/images/icon-cart.svg"> Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
