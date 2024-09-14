@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    animation: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*
+    alternate - ანიმაციის შემდეგ აბრუნებს ელემენტს საწყის მდგომარეობაში შებრუნებულად
+    reverse - უკუღმა ასრულებს ანიმაციას
+    alternate-reverse - ანიმაცია უკუღმა სრულდება და ყოველი ანიმაციის შემდეგ საწყის მდგომარეობაში ბრუნდება შემობრუნებიულად
+*/
+
+
+@keyframes anim{
+    0% {
+        background-color: aqua;
+        transform: translate(100px);
+    }
+
+    50% {
+        background-color: brown;
+        transform: translate(-100px);
+    }
+
+    70%{
+        background-color: red;
+        transform: translate(50px);
+    }
+
+    100%{
+        transform: rotate(90deg);
+    }
+}

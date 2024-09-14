@@ -34,4 +34,3 @@ def order(sentence):
                 result.append(word)
     
     return " ".join(result)
-

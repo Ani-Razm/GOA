@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: rgb(77, 127, 213);
+    --main-color2:  rgb(59, 80, 155);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 800px;
+}
+
+ul{
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+h1{
+    color: var(--main-color);
+}
+
+#logo1{
+    color: rgb(59, 80, 155);
+    font-weight: 900;
+    font-size: 45px;
+}
+
+section:nth-child(1){
+    padding-left: 20px;
+    height: 80vh;
+    background-image: url('desk-1140699_960_720.jpg');
+    background-position: center;
+    background-size: cover;
+    color: var(--main-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    color: var(--main-color2);
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    transition: ease 0.4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(82, 81, 81, 0.668);
+    background-color: rgba(255, 255, 255, 0.59);
+    color: rgb(0, 0, 0);
+}
+
+#computers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#products-h1{
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.computer{
+    border: 0.3px solid rgb(84, 84, 84);
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 300px;
+}

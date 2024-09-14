@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(38, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img{
+    width: 200px;
+    animation: flying;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flying{
+    0%{
+        transform: translate(0px,-20px);
+        opacity: 0.5;
+    }
+
+    50%{
+        transform: translate(0px, 20px);
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: translate(0px, -30px) scale(1.2);
+        opacity: 1;
+    }
+}

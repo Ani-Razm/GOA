@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div{
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:nth-child(1):hover{
+            transform: translate(100px,20px) rotate(20deg);
+        }
+
+        div:nth-child(2):active{
+            transform: rotate(-100deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

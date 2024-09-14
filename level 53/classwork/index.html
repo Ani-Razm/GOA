@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #cube{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        /* transition: transform 0.5s ease 0.5s; */
+        transition-property: transform; /*ვაკონკრეტებთ იმ კუთვნილებას რომლის გადასვლის სიჩქარეც გვინდა გავაკონტროლოთ*/
+        transition-duration: 0.5s; /*ვაკონკრეტებთ გადასვლის დროს*/
+        transition-timing-function: ease-in-out;/*გადასვლის სიჩქარე*/
+        transition-delay: 0.5s;/*შეფერხება, ანუ რა დროის შემდეგ დაიწყება გადასვლა*/
+    }
+
+    #cube:hover{
+        transform:scale(1.1) rotate(20deg);
+        background-color: aqua;
+    }
+
+</style>
+<body>
+    <div id = "cube">1</div>
+
+    <!--rotate - აბრუნებს ელემენტს-->
+    <!--scale - ადიდებს და აპატარავებს ელემენტს ზომაში-->
+    <!--skew - ხრის ელემენტს-->
+    <!--translate - უცვლის ელემენტს მდგომარეობას-->
+    <!--transform - ეს არის კუთვნილება რომლის საშუალებითაც ჩვენ ვანიჭებთ ელემენტს ეფექტს(ანუ ვცვლით ელემენტს მხოლოდ ვიზუალურად, თუმცა თვითონ ელემენტი იგივე ადგილას რჩება)-->
+    <!--transition - ეს არის კუთვნილება რომელიც აკონტროლებს თუ როგორი გადასვლა ექნება ელემენტს-->
+
+    <!--ease - გადასვლა იწყება ნელა, მერე ჩქარდება, ბოლოს ისევ ნელდება-->
+    <!--ease_in - ნელა იწყება და ბოლოში ჩქარდება-->
+    <!--ease-out - ჩქარა იწყება და ნელა მთავრდება-->
+    <!--ease-in-out - ნელა იწყება, შუაში სწრაფდება და ბოლოში ისევ ნელდება , უბრალოდ ease-სთან განსხვავებით უფრო ნელია დასაწყისში და ბოლოში-->
+    <!--linear - გადასვლის სიჩქარე არის ერთი და იგივე, არ იცვლება-->
+</body>
+</html>

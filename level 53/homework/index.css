@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+div:nth-child(1){
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease 0.2s;
+}
+
+div:nth-child(1):hover{
+    background-color: aqua;
+    transform: translate(20px);
+}
+
+div:nth-child(2){
+    background-color: rgb(61, 61, 173);
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease 0.2s;
+}
+
+div:nth-child(2):hover{
+    background-color: aqua;
+    transform: translate(-20px);
+}
+
+div:nth-child(3){
+    background-color: rgb(255, 0, 119);
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+div:nth-child(3):hover{
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+div:nth-child(4){
+    background-color: rgb(39, 219, 81);
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease-in;
+}
+
+div:nth-child(4):hover{
+    background-color: aqua;
+    transform: skew(10deg);
+}
+
+div:nth-child(5){
+    background-color: rgb(224, 157, 40);
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease-in, scale 0.5s ease;
+}
+
+div:nth-child(5):hover{
+    background-color: aqua;
+    transform: rotate(360deg) scale(1.3);
+}

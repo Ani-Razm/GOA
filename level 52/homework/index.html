@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:nth-child(1):hover{
+            transform: rotate(30deg);
+        }
+
+        div:nth-child(2):hover{
+            transform: translate(20px, 50px)
+        }
+
+        div:nth-child(3):active{
+            transform: scale(1.2);
+        }
+
+        div:nth-child(4):hover{
+            transform: skew(-100deg);
+        }
+
+        div:nth-child(5):active{
+            transform: rotate(30deg);
+            transform-origin: top right;
+        }
+
+    </style>
+</head>
+<body>
+    <!--transform ფუნქციას ჩვენ ვიყენებთ იმისთვის რომ შევუცვალოთ ელემენტს ზომა ან მდგომარეობა.-->
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+
+</body>
+</html>
