@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+:root{
+    --main_color:#4abebd; 
+    --Cyan: hsl(179, 62%, 43%);
+    --light_green: hsl(71, 73%, 54%);
+    --light_gray: hsl(204, 43%, 93%);
+    --grayish_blue: hsl(218, 22%, 67%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* first section */
+.main_section{
+    box-shadow: 10px 10px 20px rgb(168, 165, 165);
+    width: 650px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 2fr 3fr/ 1fr 1fr;
+}
+
+.section1{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: 1/span2;
+    background-color: rgb(255, 255, 255);
+}
+
+h2{
+    color: var(--Cyan);
+    padding-bottom: 20px;
+}
+
+div header h3{
+    color: var(--light_green);
+    padding-bottom: 15px;
+}
+
+div section p{
+    color:var(--grayish_blue);
+    line-height: 25px;
+}
+
+/* second section */
+.section2{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2bb3b1;
+    color: white;
+}
+
+.section2 h3{
+    padding-bottom: 30px;
+}
+
+#dollar{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.price {
+    color: #90d6d8;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 8px;
+}
+
+.section2 p:nth-child(3){
+    color: var(--light_gray);
+    padding-bottom: 35px;
+}
+button{
+    background-color: var(--light_green);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.288);
+    transition: 0.25s;
+}
+
+button:hover{
+    background-color: #bfdf329d;
+}
+
+/* third section */
+.section3{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main_color);
+    color: white;
+    gap: 25px;
+}
+
+.section3 p{
+    width: 220px;
+    line-height: 25px;
+    color: var(--light_gray);
+}
+
+
+@media screen and (max-width: 600px){
+    .main_section{
+        width: 330px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

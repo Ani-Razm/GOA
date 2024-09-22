@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: white;
+    font-family: "Lexend Deca";
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0c1b;
+}
+
+section{
+    display: flex;
+    background-color: #1c1938;
+    width: 1100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    font-family: Inter;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+#main_p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-bottom: 60px;
+    text-transform: none;
+    line-height: 25px;
+    letter-spacing: 0px;
+    width: 350px;
+}
+
+#colored_txt{
+    color: #aa5fd7;
+}
+
+.info{
+    display: flex;
+    gap: 50px;
+}
+
+.nums{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Inter;
+    text-transform: none;
+    padding: 5px 0px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1200px){
+    section{
+        width: 820px;
+        height: 370px;
+    }
+
+    header{
+        font-size: 18px;
+    }
+
+    .text{
+        padding: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    section{
+        width: 500px;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+
+    section{
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 320px;
+        height: 650px;
+        text-align: center;
+    }
+    header{
+        font-size: 16px;
+    }
+
+    .text{
+        padding: 50px;
+    }
+
+    #main_p{
+        width: 280px;
+        padding-bottom: 20px;
+    }
+
+    .info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nums{
+        font-size: 18px;
+    }
+
+    img{
+       width: 100%;
+       position: relative;
+       top:0px;
+    }
+}
