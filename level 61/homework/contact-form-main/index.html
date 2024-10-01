@@ -11,29 +11,45 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="main">
 
-    <h1>Contact Us</h1>
+    <h1>Contact Us</h1><br>
 
     <form action="#">
 
-      <label for="fn">First Name <span>*</span></label><br>
-      <input type="text" id="fn" name="fname" required><br>
-
-      <label for="ln">Last Name <span>*</span></label><br>
-      <input type="text" id="ln" name="lname" required><br>
+      <div class="names">
+        <div>
+          <label for="fn">First Name <span>*</span></label><br>
+          <input type="text" id="fn" name="fname" required><br>
+        </div>
+        
+        <div>
+          <label for="ln">Last Name <span>*</span></label><br>
+          <input type="text" id="ln" name="lname" required><br>
+        </div>
+      </div><br>
 
       <label for="em">Email Address <span>*</span></label><br>
-      <input type="email" id="em" name="email" required><br>
+      <input type="email" id="em" name="email" required><br><br>
 
       <label>Query Type <span>*</span></label><br>
-      <input type="radio" id="r1" name = "Query" value="General Enquiry" required> <label for="r1">General Enquiry</label>
-      <input type="radio" id="r2" name = "Query" value="Support Request" required> <label for="r2">Support Request</label><br>
+      <div class="radios">
+        <div>
+          <input type="radio" id="r1" name = "Query" value="General Enquiry" required> <label for="r1">General Enquiry</label>
+        </div>
+
+        <div>
+          <input type="radio" id="r2" name = "Query" value="Support Request" required> <label for="r2">Support Request</label><br>
+        </div>
+      </div><br>
 
       <label for="message">Message <span>*</span></label><br>
-      <textarea name="message" id="message" required></textarea><br>
+      <textarea name="message" id="message" required></textarea><br><br>
 
-      <input type="checkbox" value="consent" name="contact" required id="contact"><label for="contact">I consent to being contacted by the team <span>*</span></label><br>
+      <div class="check">
+        <input type="checkbox" value="consent" name="contact" required id="contact">
+        <label for="contact">I consent to being contacted by the team <span>*</span></label><br>
+      </div><br>
 
       <input type="submit">
     </form>
