@@ -28,5 +28,3 @@ function message() {
 let name = prompt("enter your name: ");
 let surname = prompt("enter your surname: ");
 console.log("registered")
-
-
