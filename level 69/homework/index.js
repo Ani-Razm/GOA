@@ -74,7 +74,7 @@ console.log(nums.sort());
 
 // Custom Sort: Use a custom comparison function to sort numbers in descending order.
 let numbers = [0,3,1];
-console.log(numbers.sort(function(){return -1}) + " ////////////");
+console.log(numbers.sort(function(a, b){return b-a}));
 
 // Reverse Array: Use reverse() on a sorted array and log the result.
 console.log(nums.reverse());
