@@ -7,30 +7,41 @@ let timer = document.getElementById("timer");
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
-let timer_change;
+let timerChange;
+
+function pad(n) {
+   if(n < 10){
+    return "0" + String(n);
+   } else {
+    return n 
+    }
+}
 
 start.onclick = function () {
-        timer_change = setInterval(function(){
-        seconds += 1
-        if(seconds == 60){
-            seconds = 0;
-            minutes += 1;
+        if(!timerChange){
+            timerChange = setInterval(function(){
+                seconds += 1
+                if(seconds == 60){
+                    seconds = 0;
+                    minutes += 1;
+                }
+                if(minutes == 60){
+                    minutes = 0;
+                    hours += 1;
+                }
+                timer.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+            }, 1000)
         }
-        if(minutes == 60){
-            minutes = 0;
-            hours += 1;
-        }
-        timer.textContent = `${hours}:${minutes}:${seconds}`;
-    }, 1000)
 };
 
 reset.onclick = function () {
     seconds = 0;
     minutes = 0;
     hours = 0;
-    timer.textContent = `${hours}:${minutes}:${seconds}`
-}
+    timer.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
+};
 
 stop.onclick = function() {
-    clearInterval(timer_change);
+    clearInterval(timerChange);
+    timerChange = null;
 };
