@@ -5,7 +5,7 @@
 let div = document.querySelector("div");
 
 //ჩავამატეთ დივ თეგის შიგნით ელემენტები.
-div.innerHTML = `
+div.innerHTML += `
     <p>ani</p>
     <p>ani</p>
     <p>ani</p>

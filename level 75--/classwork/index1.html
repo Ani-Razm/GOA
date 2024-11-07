@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .main {
+            border: solid;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap:27px;
+            border-radius: 5px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>To do List</h1>
+
+        <form>
+            <input type="text" placeholder="enter your task" name="task" required>
+            <button id="btn">add</button>
+        </form>
+
+        <ol>
+            <!--<li>task 1</li>-->
+        </ol>
+
+        <script src="index1.js"></script>
+    </div>
+</body>
+</html>

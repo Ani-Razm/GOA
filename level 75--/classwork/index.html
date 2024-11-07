@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1) შექმენით ფორმა და ცხრილი, ფორმაში იქონიეთ 4 შესატანი ველი, მომხმარებლმა უნდა შემოიტანოს სახელი, იმეილი, პაროლი და ფბ ლინკი, როდესაც ფორმა დადასტურდება როგორც იცით გვერდი ავტომატურად დარეფრეშდება, გათიშეთ ეს ქმედება preventDefault() მეთოდის დახმარებით, დადასტურების შემდეგ წამოიღეთ შემოტანილი მნიშვნელობები ინფუთებიდან name ატრიბუტის დახმარებით, ყოველ დადასტურებაზე ცხრილში შექმენით ახალი რიგი და დაამატეთ ეს მნიშვნელობები, რომელიც გამოჩნდება გვერდზე -->
+
+    <!--form-->
+    <form>
+        <label for="name">name:</label>
+        <input type="text" name="name" placeholder="name" required ><br><br>
+
+        <label for="email">email:</label>
+        <input type="email" name="email" placeholder="email" required><br><br>
+
+        <label for="password">password:</label>
+        <input type="password" name="password" placeholder="password" required ><br><br>
+
+        <label for="url">Facebook url:</label>
+        <input type="url" name="url" placeholder="url" required ><br><br>
+
+        <input type="submit" id="submit">
+    </form>
+
+    <br>
+    <br>
+
+    <!--table-->
+    <table>
+        <thead>
+            <tr>
+                <td>name</td>
+                <td>email</td>
+                <td>password</td>
+                <td>FB url</td>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- link to js -->
+    <script src="index.js"></script>
+</body>
+</html>
