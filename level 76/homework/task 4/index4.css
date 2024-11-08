@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    font-size: 100px;
+    padding: 20px;
+    transition: all ease 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1) translate(0px,-10px);
+}
+
+button:active {
+    background-color: blue;
+    letter-spacing: 20px;
+}

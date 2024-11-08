@@ -1,0 +1,35 @@
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: ease go_on_walk 5s infinite;
+}
+
+@keyframes go_on_walk {
+    0% {
+        left:0.5%;
+        top:0.5%;
+    }
+
+    25% {
+        left:93%;
+        top:0.5%;
+    }
+
+    50% {
+        left:93%;
+        top:86%;
+    }
+
+    75% {
+        left:0.5%;
+        top:86%;
+    }
+
+    100% {
+        left:0.5%;
+        top:0.5%;
+
+    }
+}

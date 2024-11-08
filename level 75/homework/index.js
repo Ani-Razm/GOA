@@ -23,9 +23,10 @@ function editTask(id) {
     task.replaceChild(input, span);
 
     let save = document.createElement("button");
-    save.textContent = "Save";
+    save.textContent = "✔";
 
     task.appendChild(save);
+    save.id = "save";
 
     save.onclick = function () {
         span.textContent = input.value;
@@ -46,9 +47,11 @@ btn.addEventListener('click', function (e) {
     span.textContent = task;
     li.appendChild(span);
     li.innerHTML += `
-        <i class='bx bx-trash'></i>
-        <i class='bx bx-edit-alt' ></i>
-        <input type="checkbox">
+        <div>
+            <i class='bx bx-trash'></i>
+            <i class='bx bx-edit-alt' ></i>
+            <input type="checkbox">
+        </div>
     `
 
     //giving each list item an unique id, to be able delete and edit them separately
@@ -65,12 +68,12 @@ btn.addEventListener('click', function (e) {
     const icons = li.getElementsByTagName("i");
     
     icons[0].addEventListener("click", function () {
-        deleteTask(li.id)
-    })
+        deleteTask(li.id);
+    });
 
     icons[1].addEventListener("click", function () {
         editTask(li.id);
-    })
+    });
 
     const check = getElementById("check");
 
