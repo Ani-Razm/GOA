@@ -25,8 +25,8 @@ function changeToOposite(num) {
     return num * -1;
 };
 
-console.log(changeToOposite(5));
-console.log(changeToOposite(-5));
+console.log(changeToOposite(5) + 1);
+console.log(changeToOposite(-5) + 1);
 
 // 5) გავაკეთოთ ფუნქცია რომელიც გადაცემული ID-ს მიხედვით აბრუნებს html-ის ელემენტს (მაგ: "first" -> document.getElementbyId("first")) შემდეგ კი გამოიყენეთ ეს ფუნქცია რომ დაბრუნბულ ელემენტს 3 ატრიბუტი შევუცვალოთ (მაგ: color, backgroundColor, textContent) (ჩვეულებრიივი ფუნქცია)
 function giveElementById(id) {
