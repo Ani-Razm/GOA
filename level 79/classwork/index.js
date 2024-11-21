@@ -4,8 +4,7 @@ const divs = document.getElementsByTagName("div");
 buttons[0].addEventListener("mouseover", function () {
     divs[0].style.backgroundColor = "red";
     divs[0].textContent = "1";
-    divs[0].style.opacity = "1";
-    
+    divs[0].style.opacity = "1";  
 })
 
 buttons[1].addEventListener("mouseover", function () {

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: fantasy;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    box-shadow: 10px 10px 20px rgb(226, 224, 224);
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+button {
+    padding:5px;
+    border: none;
+}
+
+button:nth-child(1){
+    background-color: black;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}

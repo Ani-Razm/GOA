@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans";
+}
+
+:root{
+    --purple1: hsl(254, 88%, 90%);
+    --purple2: hsl(256, 67%, 59%);
+    --yellow1: hsl(31, 66%, 93%);
+    --yellow2: hsl(39, 100%, 71%);
+    --black: (0, 0%, 7%);
+
+    --p-font: 18px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.grid{
+    width: 60%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 25px;
+}
+
+h2 {
+    letter-spacing: -2px;
+    font-weight: 550;
+}
+/*--------------------------------------------------*/
+.create-post{
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+    background-color: var(--yellow1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.create-post h2{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.create-post em{
+    color: var(--purple2);
+}
+
+.create-post img{
+    margin-top: 10%;
+    width: 95%;
+}
+
+/*--------------------------------------------------*/
+.main{
+    grid-column: 3/span 4;
+    grid-row: 1/span 2;
+    background-color: var(--purple2);
+    text-align: center;
+    font-size: 1.3rem;
+    color:  #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main p{
+    color: var(--yellow1);
+    font-size: 1rem;
+}
+
+h1{
+    font-weight: 400;
+    line-height: 1;
+    font-size: 3rem;
+}
+
+.main img{
+    margin: 1.5rem 0rem 0.3rem;
+    width: 30%;
+}
+
+span{
+    color: var(--yellow2);
+}
+
+/*--------------------------------------------------*/
+.schedule-posts{
+    grid-column: 7/span 2;
+    grid-row: 1/span 4;
+    background-color: var(--purple1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+    overflow: hidden;
+    gap: 15px;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.schedule-posts img{
+    width: 175%;
+    position: relative;
+    left: 77px;
+}
+
+/*--------------------------------------------------*/
+.ai-content{
+    grid-column: 1/span 2;
+    grid-row: 4/span 3;
+    background-color: var(--yellow2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.ai-content h2{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.ai-content img{
+    margin-top: 32px;
+    width: 100%;
+}
+
+/*--------------------------------------------------*/
+.grow-followers{
+    grid-area: 5/5/span 2/span 4;
+    background-color: var(--purple2);
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.grow-followers img{
+    width: 55%;
+    position: relative;
+    right: 30px;
+
+}
+
+.grow-followers h2{
+    font-size: 2.1rem;
+    line-height: 1;
+    color: #f6f6f6;
+}
+
+
+/*--------------------------------------------------*/
+.audience-growth{
+    grid-area: 5/3/span 2/span 2;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.audience-growth h2{
+    font-size: 3rem;
+    padding-right: 25%;
+}
+
+.audience-growth img{
+    margin-top: 15%;
+    width: 90%;
+}
+
+.audience-growth p{
+    font-size: 14px;
+}
+
+/*--------------------------------------------------*/
+.multiple-platforms{
+    grid-column: 3/ span 2;
+    grid-row: 3/ span 2;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    overflow: hidden;
+}
+
+.multiple-platforms h2{
+    line-height: 1;
+}
+
+.multiple-platforms img{
+    margin-bottom: 10%;
+    width: 135%;
+}
+
+/*--------------------------------------------------*/
+.consistent-schedule{
+    grid-area: 3/5/span 2/ span 2;
+    background-color: var(--yellow2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+    overflow: hidden;
+}
+
+.consistent-schedule h2{
+    margin-top: 45%;
+    margin-bottom: 8%;
+    line-height: 1;
+}
+
+
+
+.consistent-schedule img{
+    width: 100%;
+}
+
+div{
+    border-radius: 10px;
+}
+
+
+img{
+    width: 100px;
+}
