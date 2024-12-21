@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+            color: rgb(79, 79, 255);
+        }
+
+        body {
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 10px 10px rgb(195, 195, 195);
+            width: 300px;
+            height: auto;
+            padding: 40px 0px;
+        }
+
+        .main > div {
+            width: 77%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input {
+            padding: 8px;
+            background-color: #eee;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(79, 79, 255);
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        small {
+            display: none;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <h1>Form</h1>
+            <form> 
+                <input type="text" name="name" placeholder="name">
+                <small></small>
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+                <small></small>
+                <input type="password" name = "repeat-password" placeholder="repeat password">
+                <small></small>
+                <input type="number" name="age" placeholder="age" max="140" min="0">
+                <small></small>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    <div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

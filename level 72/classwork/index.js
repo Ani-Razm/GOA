@@ -3,9 +3,9 @@ let timer = document.getElementById("timer");
 
 const timeChange = setInterval(
     function () {
-        time --;
+        time--;
         timer.textContent = `${time} left`;
-        if(time == 0) {
+        if (time == 0) {
             timer.textContent = "time is up";
             clearInterval(timeChange);
         };

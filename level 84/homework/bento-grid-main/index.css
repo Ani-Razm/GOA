@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "DM Sans";
 }
 
-:root{
+:root {
     --purple1: hsl(254, 88%, 90%);
     --purple2: hsl(256, 67%, 59%);
     --yellow1: hsl(31, 66%, 93%);
@@ -17,7 +17,7 @@
     --p-font: 18px;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body{
     background-color: #f6f6f6;
 }
 
-.grid{
+.grid {
     width: 60%;
     height: 90vh;
     display: grid;
@@ -38,8 +38,9 @@ h2 {
     letter-spacing: -2px;
     font-weight: 550;
 }
+
 /*--------------------------------------------------*/
-.create-post{
+.create-post {
     grid-column: 1/span 2;
     grid-row: 1/span 3;
     background-color: var(--yellow1);
@@ -50,56 +51,56 @@ h2 {
     padding: 0px 10%;
 }
 
-.create-post h2{
+.create-post h2 {
     font-size: 1.8rem;
     line-height: 1;
 }
 
-.create-post em{
+.create-post em {
     color: var(--purple2);
 }
 
-.create-post img{
+.create-post img {
     margin-top: 10%;
     width: 95%;
 }
 
 /*--------------------------------------------------*/
-.main{
+.main {
     grid-column: 3/span 4;
     grid-row: 1/span 2;
     background-color: var(--purple2);
     text-align: center;
     font-size: 1.3rem;
-    color:  #f6f6f6;
+    color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main p{
+.main p {
     color: var(--yellow1);
     font-size: 1rem;
 }
 
-h1{
+h1 {
     font-weight: 400;
     line-height: 1;
     font-size: 3rem;
 }
 
-.main img{
+.main img {
     margin: 1.5rem 0rem 0.3rem;
     width: 30%;
 }
 
-span{
+span {
     color: var(--yellow2);
 }
 
 /*--------------------------------------------------*/
-.schedule-posts{
+.schedule-posts {
     grid-column: 7/span 2;
     grid-row: 1/span 4;
     background-color: var(--purple1);
@@ -112,19 +113,19 @@ span{
     gap: 15px;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     line-height: 1;
 }
 
-.schedule-posts img{
+.schedule-posts img {
     width: 175%;
     position: relative;
     left: 77px;
 }
 
 /*--------------------------------------------------*/
-.ai-content{
+.ai-content {
     grid-column: 1/span 2;
     grid-row: 4/span 3;
     background-color: var(--yellow2);
@@ -135,18 +136,18 @@ h2{
     padding: 0px 10%;
 }
 
-.ai-content h2{
+.ai-content h2 {
     font-size: 1.8rem;
     line-height: 1;
 }
 
-.ai-content img{
+.ai-content img {
     margin-top: 32px;
     width: 100%;
 }
 
 /*--------------------------------------------------*/
-.grow-followers{
+.grow-followers {
     grid-area: 5/5/span 2/span 4;
     background-color: var(--purple2);
     display: flex;
@@ -154,14 +155,14 @@ h2{
     padding: 0px 10%;
 }
 
-.grow-followers img{
+.grow-followers img {
     width: 55%;
     position: relative;
     right: 30px;
 
 }
 
-.grow-followers h2{
+.grow-followers h2 {
     font-size: 2.1rem;
     line-height: 1;
     color: #f6f6f6;
@@ -169,7 +170,7 @@ h2{
 
 
 /*--------------------------------------------------*/
-.audience-growth{
+.audience-growth {
     grid-area: 5/3/span 2/span 2;
     background-color: #fff;
     display: flex;
@@ -179,22 +180,22 @@ h2{
     padding: 0px 10%;
 }
 
-.audience-growth h2{
+.audience-growth h2 {
     font-size: 3rem;
     padding-right: 25%;
 }
 
-.audience-growth img{
+.audience-growth img {
     margin-top: 15%;
     width: 90%;
 }
 
-.audience-growth p{
+.audience-growth p {
     font-size: 14px;
 }
 
 /*--------------------------------------------------*/
-.multiple-platforms{
+.multiple-platforms {
     grid-column: 3/ span 2;
     grid-row: 3/ span 2;
     background-color: #fff;
@@ -205,17 +206,17 @@ h2{
     overflow: hidden;
 }
 
-.multiple-platforms h2{
+.multiple-platforms h2 {
     line-height: 1;
 }
 
-.multiple-platforms img{
+.multiple-platforms img {
     margin-bottom: 10%;
     width: 135%;
 }
 
 /*--------------------------------------------------*/
-.consistent-schedule{
+.consistent-schedule {
     grid-area: 3/5/span 2/ span 2;
     background-color: var(--yellow2);
     display: flex;
@@ -226,7 +227,7 @@ h2{
     overflow: hidden;
 }
 
-.consistent-schedule h2{
+.consistent-schedule h2 {
     margin-top: 45%;
     margin-bottom: 8%;
     line-height: 1;
@@ -234,15 +235,15 @@ h2{
 
 
 
-.consistent-schedule img{
+.consistent-schedule img {
     width: 100%;
 }
 
-div{
+div {
     border-radius: 10px;
 }
 
 
-img{
+img {
     width: 100px;
 }
