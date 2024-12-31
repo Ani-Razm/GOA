@@ -13,13 +13,32 @@
 
     <div class="main">
         <div class="emails-input">
-            <label for="subj">მონიშნე რა ტიპის ემაილი გინდა: </label>
-            <select name="subjs" id="subj">
+            <label for="email">შეიყავნეთ თქვენი ემაილი</label>
+            <textarea name="email_content" id="email"></textarea>
+
+            <label for="email-type">შეიყვანე ემაილის ტიპი</label>
+            <input type="text" name="email-type" id="email-type" list="opts">
+            <datalist id="opts">
                 <option>მოგზაურობა</option>
                 <option>მოხსენება</option>
                 <option>გაცნობიერება</option>
+            </datalist>
+
+            <button id="email-add">დამატება</button>
+        </div>
+        <div class="emails-filter">
+            <label for="subj">მონიშნე რა ტიპის ემაილი გინდა: </label>
+
+            <select name="subjs" id="subj">
+
+                <option>ყველა</option>
+                <option>მოგზაურობა</option>
+                <option>მოხსენება</option>
+                <option>გაცნობიერება</option>
+
             </select>
-            <button>დადასტურება</button>
+
+            <button id="filter_btn">დადასტურება</button>
         </div>
 
         <ul class="emails-output">

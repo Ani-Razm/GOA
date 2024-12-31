@@ -12,7 +12,8 @@
 // შედეგი უნდა გამოჩნდეს HTML გვერდზე.
 // შექმენით ელემენტი <ul> და თითოეული წერილი გამოიტანეთ როგორც <li>.
 
-const button = document.querySelector("button");
+const button2 = document.querySelector("#filter_btn");
+const button1 = document.querySelector("#email-add");
 const select = document.querySelector("select");
 const emails_output = document.querySelector("ul");
 
@@ -23,9 +24,22 @@ const emails = [
     { subject: "გაცნობიერება", content: "შესაძლებელია მცირე შეცდომები", receivedDate: "2024-12-10" }
 ];
 
-button.addEventListener("click", () => {
+button2.addEventListener("click", () => {
     emails_output.innerHTML = "";
     const choice = select.value;
+    if (choice == "ყველა") {
+        for (let email of emails) {
+            emails_output.innerHTML += `
+                    <li>
+                        <div class="email">
+                            <h2>${email["subject"]}</h2>
+                            <div>${email["content"]}</div>
+                            <span>${email["receivedDate"]}</span> 
+                        </div> 
+                    </li>   
+                `
+        }
+    }
     for (let email of emails) {
         if (email["subject"] == choice) {
             emails_output.innerHTML += `
@@ -38,5 +52,19 @@ button.addEventListener("click", () => {
                 </li>   
             `
         }
+    }
+});
+
+button1.addEventListener("click", () => {
+    const d = new Date();
+    const subj = document.querySelector("#email-type");
+    const content = document.querySelector("#email");
+    if(subj.value.length > 0 && content.value.length > 0){
+        emails.push({ subject: subj.value, content: content.value, receivedDate: `${d.getFullYear()}-${d.getMonth()}-${d.getDay()}` })
+        subj.value = "";
+        content.value = "";
+    }
+    else {
+        alert("please fill all fields");
     }
 })

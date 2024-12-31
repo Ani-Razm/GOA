@@ -20,7 +20,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 89.6vh;
+    height: auto;
+    min-height: 89.5vh;
 }
 
 h1 {
@@ -53,14 +54,16 @@ li::marker {
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
+    width: 400px;
+    word-break: break-all;
 }
 
-.emails-input {
+.emails-filter {
     font-size: 18px;
     margin: 30px;
 }
 
-.emails-input select,
+.emails-filter select,
 button {
     padding: 5px 10px;
     border: 1px solid #32434d;
@@ -78,4 +81,35 @@ button {
     background: #32434d;
     color: #fff;
     cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+button:hover {
+    background: rgba(56, 76, 87, 0.863);
+}
+
+.emails-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.emails-input input {
+    width: 300px;
+}
+
+#email {
+    padding: 5px;
+    height: 90px;
+}
+
+#email:focus, #email-type:focus {
+    outline: none;
+    border: 2px solid #42535d;
+    border-radius: 2px;
+}
+
+#email-type {
+    height: 40px;
+    text-align: center;
 }
