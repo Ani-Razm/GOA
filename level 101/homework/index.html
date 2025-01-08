@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--
+    შექმენით ვებსაიტი, რომელიც მოიცავს ინფუთის ველებს, სადაც შეგიძლიათ დაამატოთ ადამიანების მონაცემები და შემდეგ ისინი ვებსაიტზე ვიზუალურად გამოაჩინოთ. თითოეული ჩანაწერისთვის საჭიროა შემდეგი ველების შევსება:
+
+    სახელი
+    გვარი
+    ასაკი
+    პირადი ნომერი (ID)
+    სიმაღლე
+    აღწერა
+    ელ. ფოსტა
+
+    ელ. ფოსტის მისამართი შეგიძლიათ ავტომატურად გენერირდეს მომხმარებლის სახელის, გვარისა და ასაკის საფუძველზე. თუ პროცესს რენდომ გენერაციის ელემენტსაც დაამატებთ, კიდევ უკეთესი იქნება.
+
+    განსაკუთრებული ყურადღება მიაქციეთ მონაცემების მუდმივად შენახვას, რაც local storage-ის გამოყენებით შეგიძლიათ განახორციელოთ.
+    -->
+    <div class="main">
+        <h1>Info</h1>
+
+        <form>
+
+            <div class="names">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="name" id="name" required>
+                </div>
+
+                <div class="input">
+                    <label for="surname">Surname</label>
+                    <input type="text" placeholder="surname" id="surname" required>
+                </div>
+            </div>
+
+            <div class="input">
+                <label for="age">Age</label>
+                <input type="number" placeholder="age" max="130" min="0" id="age" required>
+            </div>
+
+            <div class="input">
+                <label for="ID">ID</label>
+                <input type="number" placeholder="ID" id="ID" required>
+            </div>
+
+            <div class="input">
+                <label for="Height">Height</label>
+                <input type="number" placeholder="height" id="Height" required>
+            </div>
+
+            <div class="input">
+                <label for="About">About Yourself</label>
+                <textarea placeholder="write about yourself" id="About" required></textarea>
+            </div>
+
+            <div class="input">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="email" id="Email" required>
+            </div>
+
+            <input type="submit">
+        </form>
+
+    </div>
+
+    <button>✖ Clear All</button>
+
+    <div class="infos">
+        <!-- <div class="info">
+            <h2>Ani Razmadze</h2>
+            <ul>
+                <li>age: <span>18</span></li>
+                <li>height: <span>1.75</span></li>
+                <li>about: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat consequatur culpa ullam inventore repudiandae cum reiciendis. Impedit ex, itaque ad, fuga fugit quas sequi cupiditate ab voluptas blanditiis adipisci quibusdam natus veniam eligendi incidunt necessitatibus deserunt, tempore tenetur unde ratione.</span></li>
+                <li>email: <span>ani@gmail.com</span></li>
+                <li>Id: <span>1231231</span></li>
+            </ul>
+        </div>
+       -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

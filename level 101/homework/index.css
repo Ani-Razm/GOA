@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --main-color: rgb(89, 194, 255);
+    --secondary-color: rgb(196, 196, 196);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 3px;
+    width: 450px;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(228, 228, 228);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+}
+
+label {
+    color: rgb(77, 77, 77);
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.names {
+    display: flex;
+}
+
+.names input {
+    width: 185px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+input[type='submit'] {
+    font-weight: 600;
+    margin: 10px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background-color: var(--main-color);
+    transition: all ease 0.2s;
+}
+
+input[type='submit']:hover {
+    background-color: rgb(98, 140, 175);
+}
+
+button {
+    margin: 10px 0px;
+    padding: 8px 10px;
+    border: none;
+    color: white;
+    background-color: rgb(230, 110, 110);
+    transition: all ease 0.2s;
+}
+
+button:hover {
+    background-color: rgb(199, 97, 97);
+}
+
+.infos {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.info {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid var(--main-color);
+    transition: all ease 0.2s;
+}
+
+.info:hover {
+    background-color: rgb(245, 249, 252);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--main-color);
+    margin: 10px 0px;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+span {
+    color: black;
+}
+
