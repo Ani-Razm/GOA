@@ -77,7 +77,8 @@ textarea {
     border: 1px solid var(--secondary-color);
 }
 
-input[type='submit'] {
+button[type='submit'] {
+    width: 100%;
     font-weight: 600;
     margin: 10px;
     border: none;
@@ -88,7 +89,7 @@ input[type='submit'] {
     transition: all ease 0.2s;
 }
 
-input[type='submit']:hover {
+button[type='submit']:hover {
     background-color: rgb(98, 140, 175);
 }
 
@@ -136,4 +137,3 @@ li {
 span {
     color: black;
 }
-
