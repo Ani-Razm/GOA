@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            border: 2px solid rgb(119, 219, 189);
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 50px;
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: rgb(119, 219, 189);
+            color: #fff;
+            font-size: 20px;
+            padding: 5px 10px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(99, 180, 156);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3) შევქმნათ ქაუნთერი, ( ინკრემენტაციის, დიკრემენტაციის და დარესტარტების ღილაკი ), თუმცა გამოვყენოთ localStorage - რიცხვის დასამახსოვრებლად. -->
+    <div class="wrapper">
+        <div class="count">0</div>
+        <div class="buttons">
+            <button>+</button>
+            <button>-</button>
+            <button>reset</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

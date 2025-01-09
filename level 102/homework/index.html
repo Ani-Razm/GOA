@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+            min-height: 300px;
+            border: 1px solid rgb(150, 150, 150);
+            padding: 20px;
+            gap: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 10px 10px 10px rgba(204, 204, 204, 0.534);
+        }
+
+        h1 {
+            padding: 10px;
+            color: white;
+            background: rgb(107, 107, 192);
+            border-radius: 10px 10px 0 0;
+            width: 500px;
+            text-align: center;
+        }
+
+        .id-generator {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .id-generator div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid;
+            font-weight: 600;
+            letter-spacing: 2px;
+            ;
+            height: 40px;
+            width: 300px;
+            font-size: 25px;
+            border: 1px solid rgb(150, 150, 150);
+        }
+
+        .id-checker {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .id-checker button {
+            border-radius: 0 5px 5px 0;
+        }
+
+        button, input {
+
+            font-size: 20px;
+            padding: 5px 10px;
+            border: 1px solid rgb(150, 150, 150);
+        }
+
+        button {
+            background-color: rgb(107, 107, 192);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: all ease 0.2s;
+        }
+
+        button:hover {
+            background-color: rgb(65, 65, 141);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    შექმენით პროგრამა რომელიც ღილაკის დაკლიკებაზე ქმნის რენხომ ID-ს, მომხმარებელს ამ ღილაკის გარდა უნდა ქონდეს ინფუთი რომელშიც შეუძლია ჩაწეროს ID და საიტმა უნდა გამოიტანოს ეს ID არსებობს თუ არა “key-ID: value-index”
+    -->
+    <h1>ID Generator</h1>
+    <div class="main">
+        <div class="id-generator">
+            <div></div>
+            <button>Generate ID</button>
+        </div>
+
+
+        <div class="id-checker">
+            <div class="input">
+                <input type="number">
+                <button type="submit">submit</button>
+            </div>
+            <div class="answer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
