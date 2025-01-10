@@ -10,29 +10,35 @@ generateBtn.addEventListener('click', () => {
 
 submitBtn.addEventListener('click', () => {
     checkIfIdExists(input.value);
-})
+});
 
 function generateId() {
     idDiv.textContent = Math.floor(Math.random() * 10 ** 11);
 }
 
 function checkIfIdExists(ID) {
-    let idList = JSON.parse(localStorage.getItem('idList')) || [];
-    if (idList.includes(ID)) {
-        warnDiv.textContent = 'this ID already exists on database';
-        warnDiv.style.color = 'red';
-        input.style.color = 'red';
-    } else {
+    let idFound = false;
+
+    for(let i = 0; i < localStorage.length; i++){
+        const key = localStorage.key(i);
+        if(localStorage.getItem(key) === ID){
+            idFound = true;
+            warnDiv.textContent = 'this ID already exists on database';
+            warnDiv.style.color = 'red';
+            input.style.color = 'red';
+            return;
+        }
+    }
+
+    if(!idFound){
         warnDiv.textContent = "this ID doesn't exists on database";
         warnDiv.style.color = 'green';
         input.style.color = 'green';
-
-        addIdToLocaLS(ID);
     }
+
+    addIdToLocaLS(ID);
 }
 
 function addIdToLocaLS(ID) {
-    let idList = JSON.parse(localStorage.getItem('idList')) || [];
-    idList.push(ID);
-    localStorage.setItem('idList', JSON.stringify(idList))
+    localStorage.setItem(localStorage.length, ID);
 }
