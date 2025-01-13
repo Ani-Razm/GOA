@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #B8DCF0;
+        }
+
+        [middle] {
+            width: 70px;
+            height: 70px;
+            margin: 40px;
+        }
+
+        [outher1],
+        [outher2],
+        [middle] {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: #3F4869;
+            transform: rotate(45deg);
+        }
+
+        [outher1] {
+            top: -82px;
+        }
+
+        [outher2] {
+            bottom: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div outher1></div>
+    <div middle></div>
+    <div outher2></div>
+</body>
+
+</html>
