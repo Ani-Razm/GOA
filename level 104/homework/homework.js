@@ -71,7 +71,7 @@ console.log(arr6.filter(({ name, age }) => name.length > 3 && age < 10))
 // Destructuring Arrays with Mixed Types: Given an array containing both primitive values and objects, extract properties from the objects using destructuring.
 const arr7 = [{ name1: 'ani', age1: 18 }, 1, "ani"];
 
-const [{name1, age1}, num, str] = arr7;
+const [{ name1, age1 }, num, str] = arr7;
 
 console.log(name1, age1);
 // Manual Destructuring Function Rules
@@ -84,7 +84,7 @@ console.log(name1, age1);
 
 function manualDestructing(obj) {
     let result = []
-    for(let key in obj){
+    for (let key in obj) {
         result.push(obj[key])
     }
     return result

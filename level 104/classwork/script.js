@@ -9,5 +9,5 @@ while (!exit) {
     const answer = prompt('do you want to continue? yes/no');
     if (answer == 'no') {
         exit = true;
-    } 
+    }
 }

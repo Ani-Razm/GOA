@@ -26,7 +26,7 @@ function addInfo(infoFromLocalS) {
     // adding data to local storage
     let userObj = infoFromLocalS || {};
 
-    if(!infoFromLocalS) {
+    if (!infoFromLocalS) {
         Array.from(inputs).forEach(input => {
             userObj[input.id] = input.value;
         });
@@ -42,7 +42,7 @@ function addInfo(infoFromLocalS) {
     const infoDiv = document.createElement('div');
     infoDiv.classList = "info"; // adding class for styling
 
-    for(let key in userObj){
+    for (let key in userObj) {
         const li = document.createElement('li');
         li.innerHTML = `${key}: <span>${userObj[key]}</span>`;
         ul.appendChild(li);

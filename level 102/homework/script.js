@@ -19,9 +19,9 @@ function generateId() {
 function checkIfIdExists(ID) {
     let idFound = false;
 
-    for(let i = 0; i < localStorage.length; i++){
+    for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if(localStorage.getItem(key) === ID){
+        if (localStorage.getItem(key) === ID) {
             idFound = true;
             warnDiv.textContent = 'this ID already exists on database';
             warnDiv.style.color = 'red';
@@ -30,7 +30,7 @@ function checkIfIdExists(ID) {
         }
     }
 
-    if(!idFound){
+    if (!idFound) {
         warnDiv.textContent = "this ID doesn't exists on database";
         warnDiv.style.color = 'green';
         input.style.color = 'green';
