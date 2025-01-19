@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #587795;
+        }
+
+        div {
+            display: grid;
+            grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+            place-items: center;
+            gap: 20px;
+            width: 160px;
+            height: 160px;
+            background: #E8AD6D;
+        }
+
+        div>div {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #587795;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: #DE817E;
+        }
+
+        #parent {
+            width: 120px;
+            height: 100px;
+            background: #EBE77E;
+        }
+
+        #lower {
+            width: 120px;
+            position: relative;
+            top: 10px;
+            height: 20px;
+            background: #EBE77E;
+        }
+
+        #parent div {
+            position: relative;
+            top: 49px;
+            display: inline;
+            border-top: 49px solid #DE817E;
+            border-left: 30px solid #EBE77E;
+            border-right: 30px solid #EBE77E;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='parent'>
+        <div></div>
+        <div></div>
+    </div>
+    <div id='lower'></div>
+
+</body>
+
+</html>
