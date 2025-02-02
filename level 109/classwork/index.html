@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,35 @@
         body {
             background-color: #cef28f;
         }
-        div{
-            border: white solid;
+
+        div {
+            width: 800px;
+            aspect-ratio: 1.3;
+            border: solid;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
+
 <body>
     <div></div>
+
+    <script>
+        let parentElement = document.querySelector('div');
+        const colors = ['white', 'blue', 'red', 'brown', 'gray', 'aqua', 'orange']
+        let size = 700;
+        for (let i = 0; i < 7; i++) {
+            let childDiv = document.createElement("div");
+            childDiv.style.width = `${size}px`;
+            childDiv.style.color = colors[i]
+            size -= 100;
+            parentElement.append(childDiv)
+            parentElement = childDiv;
+        }
+    </script>
 </body>
+
 </html>
