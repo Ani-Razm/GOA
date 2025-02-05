@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            position: absolute;
+            border-radius: 15px;
+            width: 60px;
+            height: 30px;
+            background: #4B4D88;
+        }
+
+        div:nth-child(2) {
+            transform: rotate(-90deg);
+            top: 135px;
+            left: 170px;
+        }
+
+        div:nth-child(3) {
+            transform: rotate(45deg);
+            top: 66px;
+            left: 100px;
+        }
+
+        div:nth-child(4) {
+            transform: rotate(45deg);
+            top: 166px;
+            left: 100px;
+        }
+
+        div:nth-child(5) {
+            transform: rotate(-45deg);
+            top: 66px;
+            right: 100px;
+        }
+
+        div:nth-child(6) {
+            transform: rotate(-45deg);
+            top: 166px;
+            right: 100px;
+        }
+
+        .main {
+            bottom: 40px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='main'></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
