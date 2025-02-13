@@ -5,34 +5,34 @@
 
 // Creating classes
 class Animal {
-    constructor(name, color){
+    constructor(name, color) {
         this.name = name;
         this.color = color;
     }
 
-    make_noise(){
+    make_noise() {
         return this.name + " makes noises!";
     }
 }
 
 class Mammal extends Animal {
-    constructor(name, color, hasFur){
+    constructor(name, color, hasFur) {
         super(name, color);
         this.hasFur = hasFur;
     }
 
-    move(){
+    move() {
         return this.name + " moves!";
     }
 }
 
 class Dog extends Mammal {
-    constructor(name, color, hasFur, isFriendly){
+    constructor(name, color, hasFur, isFriendly) {
         super(name, color, hasFur);
-      
+
         this.isFriendly = isFriendly;
     }
-    make_noise(){
+    make_noise() {
         return this.name + " barks!";
     }
 }
@@ -54,7 +54,7 @@ console.log(dog.make_noise()); // Lucky barks!
 
 // Creating classes
 class Car {
-    constructor(engine, color, model){
+    constructor(engine, color, model) {
         this.engine = engine;
         this.color = color;
         this.model = model;
@@ -67,7 +67,7 @@ class Car {
     }
 }
 
-class ElectroCar extends Car{
+class ElectroCar extends Car {
     showInfo() {
         return `engine: ${this.engine}, color: ${this.color}, model: ${this.model}`;
     }

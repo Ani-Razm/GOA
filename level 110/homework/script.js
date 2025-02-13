@@ -1,7 +1,7 @@
 // 1) შექმნით ცხოველის, მაქანის და ადამიანისკლასი, თითოეული სამი property-თ და ერთი მეთოდით. თითოეული კლასიდან შექმენით სამ-სამი -ობიექტი და გამოიტანეთ ისინი კონსოლში.
 
 class Animal {
-    constructor(name, color, weight){
+    constructor(name, color, weight) {
         this.name = name;
         this.color = color;
         this.weight = weight;
@@ -13,7 +13,7 @@ class Animal {
 }
 
 class Car {
-    constructor(name, color, model){
+    constructor(name, color, model) {
         this.name = name;
         this.color = color;
         this.model = model;
@@ -25,7 +25,7 @@ class Car {
 }
 
 class Human {
-    constructor(name, hairColor, age){
+    constructor(name, hairColor, age) {
         this.name = name;
         this.hairColor = hairColor;
         this.age = age;
