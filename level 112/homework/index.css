@@ -2,34 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: sans-serif;
+    color: var(--main_color);
+}
+
+:root {
+    --main_color: #1c778b;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("books.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 90px;
+    width: 40%;
 }
 
 body {
+    width: 100vw;
+    position: absolute;
     display: flex;
-
     align-items: center;
-    height: 100vh;
     background-color: #f5f5f5;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: #333;
+.navbar {
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.wrapper {
+    padding: 20px;
+    width: 100vw;
+    background: linear-gradient(transparent 50%, var(--main_color) 50%);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .book {
-    margin: 20px;
+    width: 250px;
+    justify-content: space-between;
+    margin: 20px 40px;
     background-color: #fff;
-    box-shadow: 10px 10px 10px rgba(147, 147, 147, 0.1);
+    box-shadow: 10px 10px 10px rgba(95, 95, 95, 0.477);
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -38,11 +72,18 @@ header {
     align-items: center;
 }
 
+.book p {
+    color: black;
+}
+
+.book img {
+    width: 100%;
+}
+
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--main_color);
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -50,4 +91,36 @@ footer {
     justify-content: center;
     align-items: center;
 
+}
+
+footer p {
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--main_color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+button:hover {
+    background-color: #de6f2f;
 }
