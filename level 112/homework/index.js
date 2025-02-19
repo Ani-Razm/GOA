@@ -14,7 +14,6 @@ class Books {
         return 'reading ' + this.title;
     }
 
-
     getTitle() {
         return this.title;
     }
@@ -39,7 +38,6 @@ class Adventure extends Books {
         return this.adventureType;
     }
 }
-
 
 class Fantasty extends Books {
     constructor(title, pages, author, FantastyType, cover) {
