@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+            background: #FBFDB7;
+        }
+
+        div {
+            width: 280px;
+            height: 50%;
+            background:
+                linear-gradient(0deg, #46BA67 20%, transparent 20%),
+                linear-gradient(90deg, #46BA67 60px, transparent 60px 220px, #D95362 220px);
+        }
+
+        div:nth-child(2) {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

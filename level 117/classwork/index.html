@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input, select {
+            margin: 0;
+            width: 40px;
+            height: 30px;
+        }
+
+        .answer {
+            color: rgb(0, 77, 128);
+            margin: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div class="wrapper">
+        <input type="number" id="n1">
+        <select name="operation">
+            <option value=""></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <input type="number" id="n2">
+    </div>
+
+    <div class="answer">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

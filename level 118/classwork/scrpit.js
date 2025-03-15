@@ -1,56 +1,106 @@
 // 1) შექმენით პროგრამა რომელიც საშუალებას მოგვცემს დავიყოთ ჯგუფებად.
-let students = ['ani', 'gabro', 'lasha', 'nika', 'ilia', 'nata', 'giorgi', 'mate']
+let students = ['ani', 'gabro', 'lasha', 'nika', 'ilia', 'nata', 'giorgi', 'mate', 'luka'];
+let leaders = ['lasha-giorgi', 'data', 'kote', 'gobroni', 'luka'];
 
-let groupsCount = 4;
-let studentsLength = students.length
+let groupsCount = leaders.length;
+let studentsLength = students.length;
 
-let result = []
+let result = [];
 
-for (let i = 1; i < groupsCount; i++) {
+for (let i = 0; i < groupsCount; i++) {
     group = [];
-    while (group.length < studentsLength / groupsCount) {
-
+    while (group.length < 2) {
         let randomIndex = Math.trunc(Math.random() * students.length);
-        group.push(students.splice(randomIndex, 1).toString())
+        group.push(students.splice(randomIndex, 1).toString());
     }
-    result.push(group)
-
+    group.unshift("**" + leaders[i] + "**");
+    result.push(group);
 }
 
-result.push(students)
+result.push(students);
 
-console.log(result)
+console.log(result);
 
-// 2) შექმენით კარტის კლასი, პინის ფულის და 'თქვენ შესახებ ფაქტების' ფროფერთიები, დაამატეთ შესაბამისი მეთოდები
+
+// 2) შექმენით კარტის კლასი, პინის ფულის და 'თქვენ შესახებ ფაქტების' ფროფერთიები, დაამატეთ შესაბამისი მეთოდები(ფულის შეტანა/გამოტანა)
 
 class Card {
-    constructor(money, aboutMe) {
+    #money;
+    #aboutMe;
+    #pin;
+    constructor(money, aboutMe, pin) {
+        this.pin = pin;
         this.money = money;
-        this.aboutMe = aboutMe;
+        this.#aboutMe = aboutMe;
     }
-
+    
     get infoAboutMe() {
-        return 'info about me: ' + this.aboutMe;
+        return 'info about me: ' + this.#aboutMe;
     }
 
-    addInfo(info) {
-        this.aboutMe += info;
+    set money(amount){
+        if(amount < 0){
+            console.log('invalid amount');
+        } else {
+            this.#money = amount;
+        }
     }
 
-    get getMoney() {
-        return 'you balance is: ' + this.money;
+    get money() {
+        let access = prompt('enter your pin to get total money amount: ');
+        if(this.#pin == access){
+            return this.#money;
+        } else {
+            console.log('invalid pin');
+        }
     }
 
-    addMoney(amount) {
-        this.money += amount;
+    set pin(p) {
+        if(p.length == 4){
+            this.#pin = p;
+        } else {
+            console.log('invalid pin');
+        }
+    }
+
+    get pin() {
+        let fact = prompt('enter your one fact about you to deposit money: ');
+        if(this.#aboutMe.includes(fact)){
+            return this.#pin;
+        }
+
+    }
+
+    deposit(amount) {  
+        let access = prompt('enter your pin to deposit money: ');
+        if(this.#pin == access){
+            if(amount  < 1){
+                console.log('invalid amount');
+            } else {
+                this.money += amount;
+            } 
+        }
+    }
+
+    withdraw(amount){
+        let access = prompt('enter your pin to withdraw money: ');
+        if(this.#pin == access){
+            if(this.money <= amount){
+                this.money -= amount;
+            } else {
+                console.log('invalid amount');
+            }
+        } else {
+            console.log('invalid pin');
+        }
     }
 }
 
-const card = new Card(100, "name: ani, surname: razmadze, age: 18")
+const card = new Card(100, ["age: 18", "loves pets"], "1234");
 
-console.log(card.infoAboutMe)
-card.addInfo(', height: 175')
-console.log(card.getMoney)
-card.addMoney(100)
-console.log(card.infoAboutMe)
-console.log(card.getMoney)
+card.deposit(200)
+console.log(card.money)
+
+
+
+

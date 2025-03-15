@@ -1,0 +1,2 @@
+// 3. Create a Promise that resolves with a number (e.g., 5). Chain a .then handler to double the number and return it, then chain another .then handler to log the doubled number.
+new Promise((resolve, reject) => resolve(5)).then((a) => a * 2).then((a) => console.log(a));

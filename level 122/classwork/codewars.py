@@ -16,5 +16,5 @@ def maskify(cc):
 def double_char(s):
     result = []
     for l in s:
-        result.append(l*2)
+        result.append(l * 2)
     return "".join(result)

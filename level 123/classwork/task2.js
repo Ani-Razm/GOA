@@ -1,0 +1,2 @@
+// 2. Create a Promise that rejects immediately with an error message "Task 2 failed". Handle the rejection using .catch.
+new Promise((resolve, reject) => reject("Task 2 failed")).catch(error => console.log(error));
